@@ -1,0 +1,24 @@
+main{
+    
+    border-radius: 50px;
+}
+
+form{
+    z-index: 1;
+}
+
+.dwallet{
+    z-index: 0;
+    width: 20%;
+}
+
+#login{
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+    background-color: transparent;
+    border: solid 3px ;
+    border-radius: 30px;
+    padding: 2%;
+    
+}

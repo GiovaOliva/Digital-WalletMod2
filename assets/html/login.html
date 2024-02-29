@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../css/style-login.css">
+     <!--Link CSS Footer-->
+     <link rel="stylesheet" href="../css/style.css">
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+</head>
+
+
+<body>
+    <header>
+        <!--Nav con elementos "none" esperando inicio de sesión-->
+        <nav class="navbar navbar-expand-lg bg-black rounded-pill">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="../../index.html">
+                    <img src="../img/logo.png" alt="Logo" width="50" height="50"
+                        class="d-inline-block logo">Alke-Wallet
+                </a>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display:none">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Menú Principal</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="#">Depósito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Enviar Dinero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Últimos Movimientos</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link text-white login" href="./assets/html/login.html" style="display: none;">Inicio
+                    de Sesión
+                    <img src="../img/login.png" alt="login" width="40" height="40">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-black mt-3 mb-3">
+        <section>
+            <div class="container-fluid text-center pb-4">
+
+                <img src="../img/Alke-Wallet.png" alt="dwallet" class="dwallet">
+                <div id="login">
+                    <h2>Login</h2>
+                    <form id="inicioDeSesion" class="mb-4">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Login</button>
+                    </form>
+                    <a href="../../index.html" class="btn btn-secondary">Inicio</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Footer segmentado en 3 columnas-->
+        <div class="container-fluid bg-black text-white">
+            <div class="row">
+                <div class="col-4 mt-5 text-center">
+                    <!--Ubicación-->
+                    <h5>Nuestra Casa Matriz se encuentra en:</h5>
+                    <p>Amunategui #445, Santiago Centro, Chile.</p>
+                    <div class="mapouter mb-4">
+                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=amunategui+445+santiago+centro&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://www.analarmclock.com/">online alarm clock</a><br><a
+                                href="https://timenowin.net/"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: center;
+                                    height: 50%;
+                                    width: 100%;
+                                }
+                            </style><a href="https://www.embedmaps.co">google maps on website</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <!--Segmento destacable-->
+                <div class="col-4 mt-5 mb-4 destacable">
+                    <h4 class="text-center">Primer lugar en Rentabilidad <br> y Servicio al Cliente</h4>
+                    <img class="primerLugar"
+                        src="https://img.freepik.com/vector-premium/premio-primer-lugar-etiqueta-laurel-dorado-ganar-competencia-plantilla-primer-lugar-vector_849264-258.jpg"
+                        alt="primer lugar">
+                    <h5 class="text-center">Segun PXI-Praxis Xperience Index 2023</h5>
+                </div>
+                <div class="col-4 mt-5 mb-4">
+                    <!--Contacto-->
+                    <h4>Contacto:</h4>
+                    <h6>Servicio al cliente: (55) 1234-5678</h6>
+                    <h6>contacto@digitalwallet.com</h6> <br>
+                    <h6>Nosostros le contactamos:</h6>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputTelefono" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="inputTelefono">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputCorreo" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="inputCorreo">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--Scripts Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!--login js-->
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
